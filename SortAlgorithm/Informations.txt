@@ -1,0 +1,14 @@
+Fazer sobre:
+
+	-> Bubble Sort*
+	-> Selection sort* (simple and double)
+	-> Insertion Sort*
+	-> Quick Sort*
+	-> Merge Sort
+	-> Radix Sort
+	-> Shell Sort
+	-> Heap Sort
+	
+	
+	=> Falar do tanto de memória que usa
+	=> Fazer o HTML com lista de algoritmos, barra para velocidade, lista para quantidade de barras

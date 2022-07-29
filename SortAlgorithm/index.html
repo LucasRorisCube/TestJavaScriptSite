@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+
+      <select id="sortAlgorithm">
+        <option value="BubbleSort" selected>BubbleSort</option>
+        <option value="QuickSort">QuickSort</option>
+        <option value="SelectionSortSimple">SelectionSort (simple)</option>
+        <option value="SelectionSortDouble">SelectionSort(double)</option>
+        <option value="InsertionSort">InsertionSort</option>
+        <option value="MergeSort">MergeSort</option>
+        <option value="HeapSort">HeapSort</option>
+        <option value="RadixSort">RadixSort</option>
+        <option value="ShellSort">ShellSort</option>
+      </select>
+      
+      <button id="sortButton" onclick="sortNumbers()">Sort</button>
+      <button id="scrambleButton" onclick="scrambleArray()">Scramble</button>
+      <input type="range" id="rangeSpeed" onchange="setSpeed()" min="1" max = "20" step="0.1">Speed
+      
+      <input type="range" id="rangeNumberBars" onchange="setNumberBars()" min="10" max = "1000" step="10">Number Of Bars
+    </main>
+    <script src="sketch.js"></script>
+    <script src="QuickSort.js"></script>
+    <script src="BubbleSort.js"></script>
+    <script src="SelectionSort.js"></script>
+    <script src="InsertionSort.js"></script>
+    <script src="MergeSort.js"></script>
+    <script src="HeapSort.js"></script>
+    <script src="RadixSort.js"></script>
+    <script src="ShellSort.js"></script>
+    <script src="InterationHTML.js"></script>
+  </body>
+</html>
