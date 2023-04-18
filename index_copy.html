@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+		.container_all {
+			background-color: rgba(0, 0, 0, 0.1);
+			border-radius: 30px;
+			padding: 10px;
+			margin: 10px;
+		}
+		.container_six {
+		  display: flex;
+		  flex-wrap: nowrap;
+		  justify-content: space-around;
+		}
+
+		.container_five {
+		  display: flex;
+		  flex-wrap: nowrap;
+		  overflow-x: hidden;
+		  justify-content: space-around;
+		  margin-left: 152px;
+		  margin-right: 152px;
+		  margin-top: 20px;
+		  margin-bottom: 20px;
+		}
+		
+		.gif {
+		  width: 150px;
+		  height: 150px;
+		  background-color: rgba(0, 0, 0, 0.1);
+		  /*border: 10px;
+		  border-style: solid;
+		  border-color: rgba(0, 0, 0, 0.1);*/
+		  transition: all 1.0s ease-in-out;
+		  position: relative;
+		}
+
+		.title {
+			font-size: 10px;
+			color: blue;
+			text-align: center;
+			max-width: 30%;
+			align-items: center;
+			display: flex;
+			transition: all 1.5 ease-in-out;
+		}
+		
+		.item:hover .gif {
+		  width: 300px;
+		  height: 300px;
+		  margin: 0 auto;
+		}
+		
+		.item:hover .title {
+		  display: flex;
+		  text-align: center;
+			align-items: center;
+			justify-content: center;
+			font-size: 40px;
+		}
+
+		.gif + .title {
+			display: none;
+			/*Margin: 0 auto;*/
+		}
+		
+		.gif img {
+		  width: 100%;
+		  height: 100%;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		}
+
+		#idnew {
+		border-radius: 30px;
+		background-color: rgba(0, 0, 0, 0.1);
+		text-align: center;
+		margin: 10px;
+		width: 600;
+		height: 100px;
+		padding: 10px;
+		margin-right: 400px;
+		margin-left: 400px;
+	  }
+
+	  .item {
+		flex-direction:column;
+		text-align: center;
+		border: 2px solid red;
+		justify-content: center;
+		border-radius: 10px;
+		padding: 10px;
+		border-radius: 10px;
+		transition: width 1.0s ease-in-out;
+		transition: height 1.0s ease-in-out;
+	  }
+
+	  </style>
+  </head>
+  <body>
+
+	<h1><center> Click on image to interaction</center></h1>
+
+	<div id="idnew">
+		<a href="Animations/CirclePacking">
+			<img src="Animations/CirclePacking/CirclePacking.gif">
+		</a>
+	</div>
+
+	<div class="container_all">
+
+		<div class="container_six">
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> <p>The game of Life</p></div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+		</div>
+
+
+		<div class="container_five">
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+		</div>
+
+		<div class="container_six">
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+			<div class="item">
+				<div class="gif">
+					<a href="Animations/TheGameOfLife">
+						<img src="Animations/TheGameOfLife/TheGameOfLife.gif">
+						
+					</a>
+				</div>
+				<div class="title"> aaaaaaaaaaaaaaaaaa </div>
+			</div>
+
+		</div>
+	</div>
+  </body>
+</html>
+
+<!-- 
+EllipseReflection
+<script src="https://unpkg.com/p5.createloop@0.2.8/dist/p5.createloop.js"></script>
+
+FPS = 60;
+frameRate(FPS);
+createLoop({duration:3, gif:true});
+
+-->
