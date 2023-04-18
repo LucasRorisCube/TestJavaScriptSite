@@ -4,6 +4,8 @@ function setup() {
 
 let x=0
 
+
+
 function draw() {
   background(220);
   line(mouseX,mouseY,width/2,height/2);
