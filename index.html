@@ -2,29 +2,99 @@
 <html>
   <head>
     <style>
-	  .container {
-        display: flex;
-        flex-direction: row;
-		background-color: rgba(0, 0, 0, 0.1);
-		border-radius: 30px;
-		padding: 10px;
-		margin: 10px;
-      }
 
-      .left-column, .right-column {
-        flex: 1;
-        padding: 1px;
-		padding-right: 100px;
-		padding-left: 100px;
-      }
-	  #idname {
-		border-radius: 30px;
+		.container_all {
+			background-color: rgba(0, 0, 0, 0.1);
+			border-radius: 30px;
+			padding: 10px;
+			margin: 10px;
+			scrollbar-width: block;
+		}
+		.container_six {
+		  display: flex;
+		  flex-wrap: nowrap;
+		  justify-content: space-around;
+		  scrollbar-width: block;
+		}
+
+		.container_five {
+		  display: flex;
+		  flex-wrap: nowrap;
+		  overflow-x: hidden;
+		  justify-content: space-around;
+		  margin-left: 152px;
+		  margin-right: 152px;
+		  margin-top: 20px;
+		  margin-bottom: 20px;
+		  scrollbar-width: block;
+		}
+		
+		.gif {
+		  width: 150px;
+		  height: 150px;
+		  background-color: rgba(0, 0, 0, 0.1);
+		  transition: all 0.5s ease-in-out;
+		  position: relative;
+		}
+
+		.title {
+			font-size: 10px;
+			color: blue;
+			text-align: center;
+			display: none;
+			transition: all 20.0s ease-in-out;
+		}
+		
+		.body {
+			overflow-y:hidden;  
+		}
+		
+		.item:hover {
+		  width: 500px;
+		  height: 550px;
+		}
+		.item:hover .gif {
+		  width: 500px;
+		  height: 500px;
+		  margin: 0 auto;
+		}
+		.item:hover .title {
+		  display: flex;
+		  font-size: 40px;
+		  transition: font-size 20s;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+			
+		}
+
+		
+	  .item {
+		width: 150px;
+		height: 150px;
+		flex-direction:column;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
 		background-color: rgba(0, 0, 0, 0.1);
-		margin: 10px;
-		width: 500px;
-		height: 500px;
 		padding: 10px;
+		border-radius: 10px;
+		transition: all 0.5s ease-in-out;
+		scrollbar-width: block;
+		overflow-y:hidden;
+		overflow:hidden; 
 	  }
+	  
+	  .gif img {
+		  width: 100%;
+		  height: 100%;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		}
+	
+		
+	  
 	  #idnew {
 		border-radius: 30px;
 		background-color: rgba(0, 0, 0, 0.1);
@@ -36,253 +106,151 @@
 		margin-right: 400px;
 		margin-left: 400px;
 	  }
-	  body {
-		background-color: rgba(255, 255, 255, 1.0);
-	  }
-    </style>
+
+	  </style>
+	
   </head>
   <body>
+
 	<h1><center> Click on image to interaction</center></h1>
+
 	<div id="idnew">
 		<a href="Animations/CirclePacking">
-			<img src="Animations/CirclePacking/CirclePacking.gif" height="100" width="600" >
+			<img src="Animations/CirclePacking/CirclePacking.gif">
 		</a>
 	</div>
-	
-    <div class="container">
-      <div class="left-column" style="text-align:center">
-		
-		<div id="idname">
-			<h2> Rubik's Cube </h2>
-				<a href="Animations/RubiksCube">
-					<img src="Animations/RubiksCube/RubiksCube.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> 4D Tesseract </h2>
-				<a href="Animations/4DTesseract">
-					<img src="Animations/4DTesseract/4DTesseract.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Marching Squares</h2>
-				<a href="Animations/MarchingSquares">
-					<img src="Animations/MarchingSquares/MarchingSquares.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> The Prime Spiral</h2>
-				<a href="Animations/ThePrimeSpiral">
-					<img src="Animations/ThePrimeSpiral/ThePrimeSpiral.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> The Prime Square</h2>
-				<a href="Animations/ThePrimeSquare">
-					<img src="Animations/ThePrimeSquare/ThePrimeSquare.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Rendering Ray Casting</h2>
-				<a href="Animations/RenderingRayCasting">
-					<img src="Animations/RenderingRayCasting/RenderingRayCasting.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Black Hole Visualization</h2>
-				<a href="Animations/BlackHoleVisualization">
-					<img src="Animations/BlackHoleVisualization/BlackHoleVisualization.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> 2D Water Ripple </h2>
-				<a href="Animations/2DWaterRipple">
-					<img src="Animations/2DWaterRipple/2DWaterRipple.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Maurer Rose </h2>
-				<a href="Animations/MaurerRose">
-					<img src="Animations/MaurerRose/MaurerRose.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Times Tables Cardioid </h2>
-				<a href="Animations/TimesTablesCardioid">
-					<img src="Animations/TimesTablesCardioid/TimesTablesCardioid.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Many Pendulums </h2>
-				<a href="Animations/ManyPendulums">
-					<img src="Animations/ManyPendulums/ManyPendulums.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Image of Pi </h2>
-				<a href="Animations/ImagePi">
-					<img src="Animations/ImagePi/ImagePi.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Linear Regression </h2>
-				<a href="Animations/LinearRegression">
-					<img src="Animations/LinearRegression/LinearRegression.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Recman's Sequence </h2>
-				<a href="Animations/RecmansSequence">
-					<img src="Animations/RecmansSequence/RecmansSequence.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Lissajous Curve Table </h2>
-				<a href="Animations/LissajousCurveTable">
-					<img src="Animations/LissajousCurveTable/LissajousCurveTable.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> 2D Supershapes </h2>
-				<a href="Animations/2DSupershapes">
-					<img src="Animations/2DSupershapes/2DSupershapes.gif" height="400" width="400">
-				</a>
-		</div>
-		
-      </div>
-      <div class="right-column" style="text-align:center">
-	  
-		<div id="idname">
-			<h2> Drawing with Fourier</h2>
-				<a href="Animations/DrawWithFourier">
-					<img src="Animations/DrawWithFourier/DrawWithFourier.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> 3D Rendering In 2D </h2>
-				<a href="Animations/3DRenderingWith2D">
-					<img src="Animations/3DRenderingWith2D/3DRenderingWith2D.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> The Prime Circle</h2>
-				<a href="Animations/ThePrimeCircle">
-					<img src="Animations/ThePrimeCircle/ThePrimeCircle.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Ray Casting</h2>
-				<a href="Animations/RayCasting">
-					<img src="Animations/RayCasting/RayCasting.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Cube Wave </h2>
-				<a href="Animations/CubeWave">
-					<img src="Animations/CubeWave/CubeWave.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Double Pendulum </h2>
-				<a href="Animations/DoublePendulum">
-					<img src="Animations/DoublePendulum/DoublePendulum.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Fourier Series </h2>
-				<a href="Animations/FourierSeries">
-					<img src="Animations/FourierSeries/FourierSeries.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Fireworks </h2>
-				<a href="Animations/Fireworks">
-					<img src="Animations/Fireworks/Fireworks.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Metaballs </h2>
-				<a href="Animations/Metaballs">
-					<img src="Animations/Metaballs/Metaballs.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Approximating The Value Of Pi </h2>
-				<a href="Animations/ApproximatingTheValueOfPi">
-					<img src="Animations/ApproximatingTheValueOfPi/ApproximatingTheValueOfPi.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Bezier Flowers </h2>
-				<a href="Animations/BezierFlowers">
-					<img src="Animations/BezierFlowers/BezierFlowers.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Kaleidoscope Snowflake </h2>
-				<a href="Animations/KaleidoscopeSnowflake">
-					<img src="Animations/KaleidoscopeSnowflake/KaleidoscopeSnowflake.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Phyllotaxis </h2>
-				<a href="Animations/Phyllotaxis">
-					<img src="Animations/Phyllotaxis/Phyllotaxis.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> Flocking Simulation </h2>
-				<a href="Animations/FlockingSimulation">
-					<img src="Animations/FlockingSimulation/FlockingSimulation.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		<div id="idname">
-			<h2> The Game Of Life </h2>
-				<a href="Animations/TheGameOfLife">
-					<img src="Animations/TheGameOfLife/TheGameOfLife.gif" height="400" width="400">
-				</a>
-		</div>
 
-		<div id="idname">
-			<h2> Ellipse Reflection </h2>
-				<a href="Animations/EllipseReflection">
-					<img src="Animations/EllipseReflection/EllipseReflection.gif" height="400" width="400">
-				</a>
-		</div>
-		
-		
-		
-      </div>
-    </div>
+	<div id="contAll_Id" class="container_all">
+
+	</div>
+	<script>
+
+		var allAnimations = [	{url:"TheGameOfLife", title:"The Game Of Life"},
+								{url:"2DWaterRipple", title:"2D Water Ripple"},
+								{url:"2DSupershapes", title:"2D Super Shapes"},
+								{url:"3DRenderingWith2D", title:"3D Rendering With 2D"},
+								{url:"4DTesseract", title:"4D Tesseract"},
+								{url:"ApproximatingTheValueOfPi", title:"Approximating Pi"},
+								{url:"BezierFlowers", title:"Bezier Flowers"},
+								{url:"BlackHoleVisualization", title:"BlackHole Visualization"},
+								{url:"CubeWave", title:"Cube Wave"},
+								{url:"DoublePendulum", title:"Double Pendulum"},
+								{url:"DrawWithFourier", title:"Draw With Fourier"},
+								{url:"Fireworks", title:"Fireworks"},
+								{url:"FlockingSimulation", title:"Flocking Simulation"},
+								{url:"FourierSeries", title:"Fourier Series"},
+								{url:"ImagePi", title:"Image Of Pi"},
+								{url:"KaleidoscopeSnowflake", title:"Kaleidoscope Snowflake"},
+								{url:"LinearRegression", title:"Linear Regression"},
+								{url:"LissajousCurveTable", title:"Lissajous Curve Table"},
+								{url:"ManyPendulums", title:"Many Pendulums"},
+								{url:"MarchingSquares", title:"Marching Squares"},
+								{url:"MaurerRose", title:"Maurer Rose"},
+								{url:"Metaballs", title:"Metaballs"},
+								{url:"Phyllotaxis", title:"Phyllotaxis"},
+								{url:"RayCasting", title:"Ray Casting"},
+								{url:"RecmansSequence", title:"Recmans Sequence"},
+								{url:"RenderingRayCasting", title:"Rendering RayCasting"},
+								{url:"RubiksCube", title:"Rubiks Cube"},
+								{url:"ThePrimeCircle", title:"The Prime Circle"},
+								{url:"ThePrimeSpiral", title:"The Prime Spiral"},
+								{url:"ThePrimeSquare", title:"The Prime Square"},
+								{url:"TimesTablesCardioid", title:"Times Tables Cardioid"}
+							]
+
+		function createItemAnimation(obj){
+			var elem = document.createElement("div");
+			elem.classList.add("item");
+
+			var elemGif = document.createElement("div");
+			elemGif.classList.add("gif");
+
+			var elemAn = document.createElement("a");
+			elemAn.href = "Animations/" + obj.url;
+
+			var imgAnimation = document.createElement("img");
+			imgAnimation.src = "Animations/" + obj.url + "/" + obj.url + ".gif";
+
+			var titleElem = document.createElement("div");
+			titleElem.classList.add("title");
+			titleElem.innerHTML = obj.title;
+			
+			elemAn.appendChild(imgAnimation);
+
+			elemGif.appendChild(elemAn);
+
+			elem.appendChild(elemGif);
+			elem.appendChild(titleElem);
+
+			return elem;
+			}
+
+			var containerAllElem = document.getElementById("contAll_Id");
+
+
+			var numElemPerRowState0 = 6;
+			var numElemPerRowState1 = 5;
+
+
+			let index = 0;
+			let count = 0;
+			let state = 0;
+
+			let divOfContainer = document.createElement("div");
+			divOfContainer.classList.add("container_six");
+
+			containerAllElem.appendChild(divOfContainer);
+
+
+			while(index < allAnimations.length){
+
+				console.log(index);
+				console.log(state);
+
+				if(state == 0){
+
+					var newElem = createItemAnimation(allAnimations[index]);
+
+					divOfContainer.appendChild(newElem);
+
+
+					index += 1;
+					count += 1;
+					if(count == numElemPerRowState0){
+						state = 1;
+						count = 0;
+
+						divOfContainer = document.createElement("div");
+						divOfContainer.classList.add("container_five");
+
+						containerAllElem.appendChild(divOfContainer);
+
+
+					}
+
+				} else if(state == 1){
+
+
+					var newElem = createItemAnimation(allAnimations[index]);
+
+					divOfContainer.appendChild(newElem);
+
+					index += 1;
+					count += 1;
+					if(count == numElemPerRowState1){
+						state = 0;
+						count = 0;
+
+						divOfContainer = document.createElement("div");
+						divOfContainer.classList.add("container_six");
+
+						containerAllElem.appendChild(divOfContainer);
+					}
+				}
+			}
+
+			
+	</script>
   </body>
 </html>
 
