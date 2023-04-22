@@ -23,7 +23,7 @@ async function trySolve(){
         }
       }
 
-      state = "UnSolved";
+      state = "NonSolvable";
     }
     
     

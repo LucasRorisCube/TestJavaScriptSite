@@ -37,8 +37,8 @@ function reset(){
     for(let j = 0 ; j < 9 ; j+=1){
       if(!table[i][j].fixed){
         table[i][j].number = 0;
-        table[i][j].colour = color(255, 255, 255);
       }
+      table[i][j].colour = color(255, 255, 255);
     }
   }
 }
