@@ -44,11 +44,11 @@ class Particle {
     colorMode(HSB);
     if(this.isFirework){
       stroke(this.colour, 255, 255);
-      strokeWeight(4);
+      strokeWeight(6);
       point(this.pos.x, this.pos.y);
     } else {
       stroke(this.colour, 255, 255, this.lifespan);
-      strokeWeight(2);
+      strokeWeight(3);
       point(this.pos.x, this.pos.y);
     }
     

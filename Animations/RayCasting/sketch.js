@@ -26,8 +26,8 @@ class Ray {
       wall.b.y,
       this.pos.x,
       this.pos.y,
-      this.dir.x * 1000,
-      this.dir.y * 1000,
+      this.dir.x * 3000,
+      this.dir.y * 3000,
       true
     );
     //print(hit);
@@ -55,11 +55,13 @@ let ray;
 let indiv;
 let walls;
 
-function setup() {
-  createCanvas(600, 600);
+function keyPressed(){
+  if(key == 'r'){
+    createWalls();
+  }
+}
 
-  indiv = new Individual(width/2, height/2);
-
+function createWalls(){
   walls = [];
 
   for (let i = 0; i < 5; i += 1) {
@@ -75,7 +77,19 @@ function setup() {
   walls.push(new Wall(1, 1, width, 1));
   walls.push(new Wall(1, height, width, height));
   walls.push(new Wall(width, 1, width, height));
+}
+
+function setup() {
+  createCanvas(floor(windowWidth*0.9), floor(windowHeight*0.9));
+
+  indiv = new Individual(width/2, height/2);
+
+  createWalls();
   
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth*0.9, windowHeight*0.9);
 }
 
 let xoff = 50;

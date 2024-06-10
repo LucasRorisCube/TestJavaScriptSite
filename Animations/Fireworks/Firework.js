@@ -31,7 +31,7 @@ class Firework {
   
   explode(){
     
-    const numParticle = random(10, 30);
+    const numParticle = random(30, 60);
     for(let i = 0 ; i < numParticle ; i += 1){
       this.particles.push(new Particle(this.firework.pos.x, this.firework.pos.y, false, this.color));
     }

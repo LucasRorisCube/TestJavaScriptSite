@@ -34,6 +34,7 @@ class Individual {
       }
       if (nearestPt) {
         stroke(255, 255, 255, 70);
+        //strokeWeight(1);
         line(this.pos.x, this.pos.y, nearestPt.x, nearestPt.y);
       }
     }
