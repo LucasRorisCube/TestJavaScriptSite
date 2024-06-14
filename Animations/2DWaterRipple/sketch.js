@@ -4,7 +4,7 @@ let m;
 let current = [];
 let prev = [];
 
-let damping = 0.98;
+let damping = 0.93;
 
 function mouseDragged() {
   current[int(mouseX)][int(mouseY)] = 255;
@@ -50,7 +50,7 @@ function setup() {
 function draw() {
   background(0);
   
-  if(frameCount % 15 == 0) {
+  if(frameCount % 10 == 0) {
     current[int(random(2, n-2))][int(random(2, m-2))] = 255;
   }
 
