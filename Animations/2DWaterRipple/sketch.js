@@ -1,25 +1,30 @@
-let n = 600;
-let m = 600;
+let n;
+let m;
 
 let current = [];
 let prev = [];
 
-let damping = 0.97;
+let damping = 0.98;
 
 function mouseDragged() {
-  current[mouseX][mouseY] = 255;
+  current[int(mouseX)][int(mouseY)] = 255;
   //prev[mouseX][mouseY] = 255;
 }
 
 function mousePressed() {
-  current[mouseX][mouseY] = 255;
+  current[int(mouseX)][int(mouseY)] = 255;
   //prev[mouseX][mouseY] = 255;
 }
 
-function setup() {
-  pixelDensity(1);
-  createCanvas(n, m);
+function windowResized() {
+  n = int(windowWidth*0.9);
+  m = int(windowHeight*0.9);
+  resizeCanvas(n, m);
 
+  createGrid();
+}
+
+function createGrid(){
   for (let i = 0; i < n; i += 1) {
     current.push(new Array(m));
     prev.push(new Array(m));
@@ -31,7 +36,15 @@ function setup() {
       prev[i][j] = 0;
     }
   }
+}
 
+function setup() {
+  pixelDensity(1);
+  n = int(windowWidth*0.9);
+  m = int(windowHeight*0.9);
+  createCanvas(n, m);
+
+  createGrid();
 }
 
 function draw() {
@@ -40,6 +53,10 @@ function draw() {
   if(frameCount % 15 == 0) {
     current[int(random(2, n-2))][int(random(2, m-2))] = 255;
   }
+
+  // if(random(1) < 0.1){
+  //   damping = damping + (-0.01 + random(0.02))
+  // }
 
   loadPixels();
 

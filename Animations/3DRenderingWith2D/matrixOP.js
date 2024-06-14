@@ -96,10 +96,10 @@ function getRotationZM(angle){
     return new Matrix(4, 4, [[cos(angle), -sin(angle), 0, 0], [sin(angle), cos(angle), 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]);
 }
 
-function drawMatrixToPoint(matrix){
+function drawMatrixToPoint(matrix, colorOfPoint){
     noFill();
-    stroke(255);
-    strokeWeight(8);
+    stroke(colorOfPoint);
+    strokeWeight(12);
     //print(matrix.matrix[0][0], matrix.matrix[1][0]);
     point(matrix.matrix[0][0], matrix.matrix[1][0]);
 }

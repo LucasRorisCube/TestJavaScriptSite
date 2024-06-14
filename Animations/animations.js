@@ -2,7 +2,7 @@ var animationsList = [
     { image: 'raycasting.jpg', html: 'RayCasting/index.html', title: 'Ray Casting' },
     { image: 'fireworks.jpg', html: 'Fireworks/index.html', title: 'Fireworks'},
     { image: '2DWaterRipple.png', html: '2DWaterRipple/index.html', title: '2D Water Ripple'},
-    { image: 'thumb1.jpg', html: '3DRenderingWith2D/index.html', title: '3D Rendering In 2D'},
+    { image: '3DRenderingIn2D.png', html: '3DRenderingWith2D/index.html', title: '3D Rendering In 2D'},
     { image: 'thumb1.jpg', html: '4DTesseract/index.html', title: '4D Tesseract'},
     { image: 'thumb1.jpg', html: 'ApproximatingTheValueOfPi/index.html', title: 'Approximating Pi'},
     { image: 'thumb1.jpg', html: 'BezierFlowers/index.html', title: 'Bezier Flowers'},
