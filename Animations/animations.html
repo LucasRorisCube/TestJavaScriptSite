@@ -2,32 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, Cache-Control: no-cache, must-revalidate, max-age=0">
+    <meta name="viewport" content="width=device-width, Cache-Control: no-cache, must-revalidate, max-age=0">
     <title>Animations - Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="animations.html">Animations</a></li>
-                <li><a href="../Games/games.html">Games</a></li>
-                <li><a href="others.html">Others</a></li>
+    <header class="bg-dark text-white py-2">
+        <nav class="container d-flex justify-content-between">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="animations.html">Animations</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="../Games/games.html">Games</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="others.html">Others</a></li>
             </ul>
+            <button class="btn btn-primary d-md-none" type="button" data-toggle="collapse" data-target="#lateralMenu" aria-expanded="false" aria-controls="lateralMenu">
+                Menu
+            </button>
         </nav>
     </header>
-    <main>
-        <aside class="lateral-menu">
-            <ul>
-                <!-- Animation options will be populated here by JavaScript -->
-            </ul>
-        </aside>
-        <section class="animation-display">
-            <iframe id="animation-frame" src="about:blank" frameborder="0"></iframe>
-        </section>
-    </main>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-md-3 bg-custom text-white p-3 collapse d-md-block" id="lateralMenu">
+                <ul class="list-unstyled">
+                    <!-- Animation options will be populated here by JavaScript -->
+                </ul>
+            </aside>
+            <main class="col-md-9 p-3">
+                <section class="animation-display">
+                    <iframe id="animation-frame" src="about:blank" frameborder="0"></iframe>
+                </section>
+            </main>
+        </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="animations.js"></script>
 </body>
 </html>

@@ -51,14 +51,17 @@ function loadAnimation(animationFile) {
 
 
 function createAnimationOptions() {
-    const ul = document.querySelector('.lateral-menu ul');
+    const ul = document.querySelector('.list-unstyled');
     animationsList.forEach(animation => {
         const li = document.createElement('li');
+        li.classList = "mb-3"; // Added Bootstrap margin-bottom class
+
         const a = document.createElement('a');
         a.href = '#';
+        a.classList = "d-flex align-items-center p-2 bg-custom rounded text-white"; // Added Bootstrap padding class and custom background class
         a.onclick = () => {
             // Remove active class from all list items
-            const listItems = document.querySelectorAll(".lateral-menu ul li a");
+            const listItems = document.querySelectorAll(".active");
             listItems.forEach(item => item.classList.remove('active'));
 
             // Add active class to the clicked list item
@@ -70,9 +73,13 @@ function createAnimationOptions() {
         const img = document.createElement('img');
         img.src = `images/${animation.image}`;
         img.alt = animation.title;
+        img.width = 70;
+        img.height = 70;
+        img.classList = "rounded"; // Added Bootstrap rounded class for rounded corners
 
         const span = document.createElement('span');
         span.textContent = animation.title;
+        span.classList = "ml-3"; // Added Bootstrap margin-left class
 
         a.appendChild(img);
         a.appendChild(span);
@@ -80,5 +87,6 @@ function createAnimationOptions() {
         ul.appendChild(li);
     });
 }
+
 
 document.addEventListener('DOMContentLoaded', createAnimationOptions);
